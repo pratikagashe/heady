@@ -23,7 +23,7 @@
         <div class="header-wrapper">
             <div class="logo animation-delay-7">
                 <img src="images/logo.png">
-            </div><nav>
+            </div><nav class="menu_body">
                 <ul>
                     <li class="active animation-delay-8">
                         <a>Bedroom</a>
@@ -56,6 +56,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="menu_click">
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
     <div class="breadcrums">
@@ -72,10 +76,10 @@
             <div class="table-cell">
                 <h2 class="submenu-text ShowIn animation-delay-12">Details</h2>
                 <ul>
-                    <li id="Details" class="active animation-delay-13"><p><a href="#Details">Details</a></p></li>
-                    <li id="Description" class="animation-delay-14"><p><a href="#Description">Description</a></p></li>
-                    <li id="Products" class="animation-delay-15"><p><a href="#Products">Products</a></p></li>
-                    <li id="Newsletter" class="animation-delay-16"><p><a href="#Newsletter">Newsletter</a></p></li>
+                    <li class="Details_block active animation-delay-13"><p><a href="#Details_block">Details</a></p></li>
+                    <li class="Description_block animation-delay-14"><p><a href="#Description_block">Description</a></p></li>
+                    <li class="Products_block animation-delay-15"><p><a href="#Products_block">Products</a></p></li>
+                    <li class="Newsletter_block animation-delay-16"><p><a href="#Newsletter_block">Newsletter</a></p></li>
                 </ul>
                 <div class="social ShowIn animation-delay-17">
                     <div>
@@ -89,7 +93,7 @@
             </div>
         </div>
         <div class="wrapper price-detailsWrapper ShowIn animation-delay-15">
-            <div class="price-details section" id="Details">
+            <div class="price-details section" id="Details_block">
                 <div class="col-1">
                     <div class="col-60">
                         <img src="images/sofa.jpg" class="product-image ShowIn animation-delay-18">
@@ -142,7 +146,7 @@
                     </div>
                 </div>
             </div>
-            <div class="product-specifications section scroll_effect" id="Description">
+            <div class="product-specifications section scroll_effect" id="Description_block">
                 <img src="images/sofa2.jpg" class="specificationImage">
                 <div class="specification_Content">
                     <h2 class="title scroll_effect transition-delay-7">Lorem ipsum dolor sit amet adipiscing elit.</h2>
@@ -151,7 +155,7 @@
                     Nullam nec felis feugiat, tempus massa et, condimentum nisl. Donec et magna accumsan, porttitor libero et, imperdiet diam. Proin bibendum, tellus vel eleifend dictum, purus leo dapibus ipsum, vel viverra magna tellus eleifend nunc. Proin pharetra libero ac sagittis fringilla. Aenean eleifend a erat quis aliquam. Aenean tellus felis, elementum sit amet placerat eu, semper vel turpis. </p>
                 </div>
             </div>
-            <div class="product-video section scroll_effect">
+            <div class="product-video scroll_effect">
                 <div class="specification_Content">
                     <h2 class="title scroll_effect">Lorem ipsum dolor sit amet adipiscing elit.</h2>
                     <div class="play-button scroll_effect">
@@ -159,15 +163,16 @@
                     </div>
                 </div>
             </div>
-            <div class="download-now section scroll_effect">
+            <div class="download-now scroll_effect">
                 <div class="downloadWrapper">
                     <h2 class="scroll_effect">Suggested Accomodation</h2>
-                    <img src="images/sofa4.jpg">
+                    <img src="images/sofa4.jpg" class="desktop_block">
                     <img src="images/sofa5.jpg" class="parallaxImg" data-depth="0.15" data-type="parallax">
+                    <img src="images/sofa5.jpg" class="parallaxImg2">
                     <a class="download-btn scroll_effect"><img src="images/icons/download.png"><span>Download PDF</span></a>
                 </div>
             </div>
-            <div class="section products" id="Products">
+            <div class="section products" id="Products_block">
                 <h2 class="title scroll_effect">Related Products</h2>
                 <div class="productBlock scroll_effect">
                     <div class="col-4">
@@ -237,40 +242,39 @@
                     </div>
                 </div>
             </div>
-            <div class="newsletter section" id="Newsletter">
-                <input type="text" id="newsletter-id" placeholder="Grab Our Newsletter" />
-                <div class="footer-menu">
-                    <nav>
-                        <ul>
-                            <li class="active">
-                                <a>Bedroom</a>
-                            </li><li>
-                                <a>Living Room</a>
-                            </li><li>
-                                <a>Office</a>
-                            </li><li>
-                                <a>Kitchen</a>
-                            </li><li>
-                                <a>Bathroom</a>
-                            </li>
-                        </ul>
-                    </nav><div class="footer-logo">
-                        <img src="images/logo.png">
-                    </div><div class="footer-social">
-                        <div class="social">
-                            <div>
-                                <a><img src="images/icons/facebook.png"></a>
-                            </div><div>
-                                <a><img src="images/icons/twitter.png"></a>
-                            </div><div>
-                                <a><img src="images/icons/pinterest.png"></a>
-                            </div>
+        </div>
+        <div class="newsletter section" id="Newsletter_block">
+            <input type="text" id="newsletter-id" placeholder="Grab Our Newsletter" />
+            <div class="footer-menu">
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a>Bedroom</a>
+                        </li><li>
+                            <a>Living Room</a>
+                        </li><li>
+                            <a>Office</a>
+                        </li><li>
+                            <a>Kitchen</a>
+                        </li><li>
+                            <a>Bathroom</a>
+                        </li>
+                    </ul>
+                </nav><div class="footer-logo">
+                    <img src="images/logo.png">
+                </div><div class="footer-social">
+                    <div class="social">
+                        <div>
+                            <a><img src="images/icons/facebook.png"></a>
+                        </div><div>
+                            <a><img src="images/icons/twitter.png"></a>
+                        </div><div>
+                            <a><img src="images/icons/pinterest.png"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    
     </div>
     
 </body>

@@ -87,7 +87,7 @@ nav ul li:hover a{color: #000;}
 .side-submenu ul li:after{bottom: 5px;}
 .side-submenu ul li p{font-size: 12px;text-transform: uppercase;position: relative; z-index: 2;}
 .side-submenu ul li p a{}
-.side-submenu ul li p a:hover{}
+.side-submenu ul li p a:hover{color: #000;}
 
 .social{text-align: right;padding-top: 65px;}
 .social div{display: inline-block;vertical-align: middle;margin-left: 25px;}
@@ -98,7 +98,7 @@ nav ul li:hover a{color: #000;}
 .MenuHidden .side-submenu{padding-top: 0;}
 .MenuHidden .submenu-text{bottom: 30px;}
 
-.section{margin-bottom: 100px;}
+.product-video, .download-now, .section{margin-bottom: 100px;}
 
 .price-detailsWrapper{padding-right: 0;}
 .price-details{padding-left: 35px;}
@@ -224,13 +224,75 @@ nav ul li:hover a{color: #000;}
 .transition-delay-11{transition-delay: 1.1s;-webkit-transition-delay: 1.1s; -moz-transition-delay: 1.1s;}
 .transition-delay-12{transition-delay: 1.2s;-webkit-transition-delay: 1.2s; -moz-transition-delay: 1.2s;}
 
-@media screen and (min-width: 200px) and (max-width: 1024px) {
+.menu_click{display: none;position: fixed;width: 40px;height: 40px;cursor: pointer;left: 15px;top: 5px;}
+.menu_click div{position: absolute;width: 21px;height: 3px;background: #000;left: 8px;transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s;}
+.menu_click div:first-child{top: 16px;}
+.menu_click div:last-child{top: 25px;}
+.menu_click.active div:first-child{transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);top: 19px;}
+.menu_click.active div:last-child{transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);top: 19px;}
 
+.parallaxImg2{display: none;}
+
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+    .menu_click{display: block;}
+    #container{padding-left: 0;padding-top: 120px;}
+    header{padding-left: 0;position: fixed;left: 0;top: 0;z-index: 10;border-bottom: 1px solid #ddd;}
+    .breadcrums{display: none;}
+    .header-wrapper nav{display: none;position: fixed;top: 44px;background: #fff;width: 100%;left: 0;}
+    .header-wrapper nav ul li{display: block; background: #fff; text-align: center; width: 100%; left: 0;}
+    .header-wrapper{padding: 0px 15px;}
+    .header-wrapper .logo{display: block;margin: auto;width: 40px;}
+    nav ul li{margin-left: 0;}
+    nav ul li a{padding: 8px 0px;display: block;border-bottom: 1px solid #ddd;}
+    nav ul li.active{background: #FFD541;}
+    nav ul li.active a{color: #fff;}
+    .header-icons{top: 15px;right: 0;}
+    .side-submenu{padding-top: 0; padding-right: 0; height: auto; background: #fff; top: 44px;width: 100%;z-index: 9;border-bottom: 1px solid #ddd;}
+    .submenu-text{display: none;}
+    .side-submenu ul li{margin: 0 -2px;width: 25%;display: inline-block;vertical-align: middle;text-align: center;}
+    .side-submenu ul li a{padding: 8px 0px;font-size: 11px;display: block;}
+    .side-submenu .social{display: none;}
+    nav ul li:after, .header-icons ul li:after, .side-submenu ul li:after{display: none;}
+    .side-submenu ul li.active{background: #FFD541;}
+    .side-submenu ul li.active a{color: #fff;}
+    .price-detailsWrapper, .wrapper{padding: 0 30px;}
+    .delivery .col-2{width: 50%;}
+    .deliveyContent p{font-size: 10px;}
+    #newsletter-id{width: auto;font-size: 22px;}
+    .newsletter{margin-bottom: 0;padding-top: 50px;}
+    .footer-menu{padding: 25px 0px;margin-top: 50px;}
+    .footer-menu nav, .footer-menu .footer-logo, .footer-menu .footer-social{display: block;width: 100%;text-align: center;}
+    .footer-menu nav ul li{display: block;}
+    .footer-menu nav ul li a{border-bottom: 0;}
+    .footer-menu .footer-social .social{text-align: center;}
 }
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
-.col-2, .col-3, .col-4, .col-5, .col-60, .col-40, .col-70, .col-30{width: 100%;}
-
+    .col-2, .col-3, .col-4, .col-5, .col-60, .col-40, .col-70, .col-30{width: 100%;}
+    .desktop_block{display: none !important;}
+    #container{padding-top: 150px;}
+    .price-detailsWrapper, .wrapper{padding: 0 20px;}
+    .product-image{margin-left: 0;margin-top: -60px;margin-bottom: 10px;}
+    .title{font-size: 21px;}
+    .price-details{padding-left: 0;}
+    .price-details .col-1{padding: 35px 15px;}
+    .price h3{font-size: 18px;}
+    .price{padding: 15px 0px;}
+    .specificationImage{display: block;}
+    .product-specifications{background: #fff;padding: 0px 15px 15px;}
+    .product-video, .download-now, .section{margin-bottom: 50px;}
+    .scroll_effect{opacity: 1;}
+    .specification_Content h2{width: 100%;background: #fff;}
+    .specification_Content p{background: #fff;width: 100%;}
+    .product-video{min-height: 450px;}
+    .product-video h2{position: absolute;left: 0;width: 100%;bottom: 0;padding: 35px;}
+    .play-button{top: calc(50% - 80px);}
+    .downloadWrapper{height: 500px;background: url('../images/sofa4.jpg') center center no-repeat;background-size: cover;padding-left: 0;}
+    .download-now {padding-left: 35px;}
+    .download-btn{bottom: auto;top: 0;padding: 20px 30px;}
+    .parallaxImg{display: none !important;}
+    .parallaxImg2{display: block;position: absolute;left: 0;bottom: 35px;width: 80%;}
+    .productBlock .col-4{width: 50%;}
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
@@ -238,19 +300,21 @@ nav ul li:hover a{color: #000;}
 }   
 
 @media screen and (min-width: 481px) and (max-width: 640px) {
-
+    .price-detailsWrapper, .wrapper{width: 450px;display: block;margin: auto;}
 }
 
 @media screen and (min-width: 641px) and (max-width: 768px) {
-
+    .price-detailsWrapper, .wrapper{width: 550px;display: block;margin: auto;}
 }
 
 @media screen and (min-width: 769px) and (max-width: 900px) {
-
+    .parallaxImg{display: none !important;}
+    .parallaxImg2{display: block;position: absolute;left: 0;bottom: 35px;width: 350px;}
 }
 
 @media screen and (min-width: 901px) and (max-width: 1024px) {
-
+    .parallaxImg{display: none !important;}
+    .parallaxImg2{display: block;position: absolute;left: 0;bottom: 35px;width: 350px;}
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1100px) {

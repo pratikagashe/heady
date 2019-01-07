@@ -36,7 +36,7 @@ $(document).ready(function() {
 
         
     $('.menu_click').on("click", function(){
-        $('.menu_body').slideToggle();
+        $('.header-wrapper nav').slideToggle();
         $(this).toggleClass('active');
         $('.logo').toggleClass('active');
     });
@@ -93,23 +93,24 @@ $(window).on('scroll', function () {
         var scrollTop     = $(window).scrollTop(),
             elementOffset = $(this).offset().top,
             distance      = (elementOffset - scrollTop);
-        if(distance > 350){
+        if(distance < 350){
             var menuID = $(this).attr('id');
             $('.side-submenu ul li').removeClass('active');
             $('.' + menuID).addClass('active');
+            $('.submenu-text').text($('.side-submenu ul li.active').text());
         } 
     });
     
     
 });
 
-//$(function() {
-//    $('[href^=#]').not('#carousel-example-generic a').click(function () {
-//		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
-//			var i = $(this.hash);
-//			if (i = i.length ? i : $("[name=" + this.hash.slice(1) + "]"), i.length) return $("html,body").animate({
-//				scrollTop: i.offset().top 
-//			}, 1e3), !1
-//		}
-//	})
-//});
+$(function() {
+    $('[href^=#]').not('#carousel-example-generic a').click(function () {
+		if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+			var i = $(this.hash);
+			if (i = i.length ? i : $("[name=" + this.hash.slice(1) + "]"), i.length) return $("html,body").animate({
+				scrollTop: i.offset().top - 50
+			}, 1e3), !1
+		}
+	})
+});
