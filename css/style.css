@@ -81,7 +81,7 @@ nav ul li:hover a{color: #000;}
 .breadcrums li a:hover{color: #FFD541;}
 .breadcrums li a.active{color: #000;pointer-events: none;}
 
-.side-submenu{width: 25%;height: 100%;position: fixed;left: 0;padding-top: 160px;padding-right: 40px;top: 0;}
+.side-submenu{width: 25%;height: 100%;position: fixed;left: 0;padding-top: 160px;padding-right: 40px;top: 0;transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s;}
 .side-submenu ul{width: 100%;text-align: right;}
 .side-submenu ul li{margin: 25px 0px;position: relative;}
 .side-submenu ul li:after{bottom: 5px;}
@@ -93,7 +93,10 @@ nav ul li:hover a{color: #000;}
 .social div{display: inline-block;vertical-align: middle;margin-left: 25px;}
 .social div img{height: 16px;}
 
-.submenu-text{position: absolute; transform: rotate(-90deg); width: 141%; transform-origin: left; bottom: 0; left: 55px;font-size: 88px;color: #fff; z-index: 5;}
+.submenu-text{position: absolute; transform: rotate(-90deg); -webkit-transform: rotate(-90deg); width: 500px; transform-origin: left; bottom: -50px; left: 55px;font-size: 88px;color: #fff; z-index: 5;text-align: center;transition: all .3s; -webkit-transition: all .3s; -moz-transition: all .3s;}
+
+.MenuHidden .side-submenu{padding-top: 0;}
+.MenuHidden .submenu-text{bottom: 30px;}
 
 .section{margin-bottom: 100px;}
 
@@ -136,7 +139,7 @@ nav ul li:hover a{color: #000;}
 
 .product-specifications{position: relative;}
 .specificationImage{display: none;}
-.product-specifications{ background: url('../images/sofa2.jpg') right center no-repeat;background-size: cover;width: 100%;}
+.product-specifications{ background: url('../images/sofa2.jpg') right center no-repeat;background-size: cover;}
 
 .specification_Content h2{background: #F0F0F0;width: 450px;padding: 40px 30px 40px 0px;box-sizing: border-box;}
 .specification_Content p{background: #F0F0F0;width: 300px;text-align: justify;font-family:Gotham-Book;padding-right: 40px; }
@@ -149,11 +152,84 @@ nav ul li:hover a{color: #000;}
 .play-button img{height: 11px;display: block;margin: auto;margin-top: 35px;position: relative;z-index: 2;}
 .play-button:hover{background: rgba(255,213,65,0.7);}
 
+.download-now{position: relative;}
+.downloadWrapper{padding-left: 60px;}
+.downloadWrapper img{display: block;}
+.downloadWrapper h2{font-weight: 400;text-transform: uppercase;font-size: 13px;letter-spacing: 1px;position: absolute;transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform-origin: left;top: 214px;left: 6px;}
+.downloadWrapper h2:after{display: block;width: 100px;height: 1px;background: #000;content: '';position: absolute;left: -115px;top: 8px;}
+.parallaxImg{position: absolute;left: -60px;width: 450px;}
+.download-btn{background: #FFD541;padding: 40px 50px;position: absolute;right: 0;bottom: 0;}
+.download-btn img{display:inline-block; vertical-align: middle;margin-right: 15px;}
+.download-btn span{display:inline-block; vertical-align: middle;text-transform: uppercase;}
+.download-btn:hover{background: #e5bf3a;color: #000;}
+
+
+.productBlock{padding-top: 40px;}
+.productBlock .col-4{padding: 0px 2px;margin-bottom: 4px;}
+.product-wrapper{background: #FAFAFA;text-align: center;}
+.product-wrapper h3{font-weight: 400;}
+.product-wrapper .price h3{font-size: 14px;}
+.product-wrapper .price{padding-top: 5px;}
+
+.newsletter{background: #FFD541;padding-top: 120px;margin-bottom: 0;}
+#newsletter-id{font-size: 28px;background: transparent;text-align: center;border-bottom: 1px solid #999;display: block;margin: auto;padding: 10px 0px;width: 550px;}
+.footer-menu{border-top: 1px solid #999;padding: 50px 0px;margin-top: 100px;}
+.footer-menu nav, .footer-menu .footer-logo, .footer-menu .footer-social{display: inline-block;vertical-align: middle;}
+.footer-menu nav{width: calc(50% - 22.5px);}
+.footer-menu .footer-logo{width: 45px;}
+.footer-menu .footer-social{width: calc(50% - 22.5px);text-align: right;padding-right: 30px;}
+.footer-menu .footer-social .social{padding-top: 0;}
+
+
+.animation-delay-7{ animation-delay: 0.7s; -webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s; }
+.animation-delay-8{ animation-delay: 0.8s; -webkit-animation-delay: 0.8s; -moz-animation-delay: 0.8s; }
+.animation-delay-9{ animation-delay: 0.9s; -webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; }
+.animation-delay-10{ animation-delay: 1.0s; -webkit-animation-delay: 1.0s; -moz-animation-delay: 1.0s; }
+.animation-delay-11{ animation-delay: 1.1s; -webkit-animation-delay: 1.1s; -moz-animation-delay: 1.1s; }
+.animation-delay-12{ animation-delay: 1.2s; -webkit-animation-delay: 1.2s; -moz-animation-delay: 1.2s; }
+.animation-delay-13{ animation-delay: 1.3s; -webkit-animation-delay: 1.3s; -moz-animation-delay: 1.3s; }
+.animation-delay-14{ animation-delay: 1.4s; -webkit-animation-delay: 1.4s; -moz-animation-delay: 1.4s; }
+.animation-delay-15{ animation-delay: 1.5s; -webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; }
+.animation-delay-16{ animation-delay: 1.6s; -webkit-animation-delay: 1.6s; -moz-animation-delay: 1.6s; }
+.animation-delay-17{ animation-delay: 1.7s; -webkit-animation-delay: 1.7s; -moz-animation-delay: 1.7s; }
+.animation-delay-18{ animation-delay: 1.8s; -webkit-animation-delay: 1.8s; -moz-animation-delay: 1.8s; }
+.animation-delay-19{ animation-delay: 1.9s; -webkit-animation-delay: 1.9s; -moz-animation-delay: 1.9s; }
+.animation-delay-20{ animation-delay: 2.0s; -webkit-animation-delay: 2.0s; -moz-animation-delay: 2.0s; }
+.animation-delay-21{ animation-delay: 2.1s; -webkit-animation-delay: 2.1s; -moz-animation-delay: 2.1s; }
+.animation-delay-22{ animation-delay: 2.2s; -webkit-animation-delay: 2.2s; -moz-animation-delay: 2.2s; }
+.animation-delay-23{ animation-delay: 2.3s; -webkit-animation-delay: 2.3s; -moz-animation-delay: 2.3s; }
+.animation-delay-24{ animation-delay: 2.4s; -webkit-animation-delay: 2.4s; -moz-animation-delay: 2.4s; }
+.animation-delay-25{ animation-delay: 2.5s; -webkit-animation-delay: 2.5s; -moz-animation-delay: 2.5s; }
+.animation-delay-26{ animation-delay: 2.6s; -webkit-animation-delay: 2.6s; -moz-animation-delay: 2.6s; }
+.animation-delay-27{ animation-delay: 2.7s; -webkit-animation-delay: 2.7s; -moz-animation-delay: 2.7s; }
+.animation-delay-28{ animation-delay: 2.8s; -webkit-animation-delay: 2.8s; -moz-animation-delay: 2.8s; }
+.animation-delay-29{ animation-delay: 2.9s; -webkit-animation-delay: 2.9s; -moz-animation-delay: 2.9s; }
+.animation-delay-30{ animation-delay: 3.0s; -webkit-animation-delay: 3.0s; -moz-animation-delay: 3.0s; }
+.animation-delay-35{ animation-delay: 3.5s; -webkit-animation-delay: 3.5s; -moz-animation-delay: 3.5s; }
+.animation-delay-40{ animation-delay: 4.0s; -webkit-animation-delay: 4.0s; -moz-animation-delay: 4.0s; }
+
+.logo, .header-wrapper nav ul li, .header-icons ul li, .breadcrums ul li, .side-submenu ul li, .ShowIn{-webkit-animation-fill-mode:both;animation-fill-mode:both; -webkit-animation-fill-mode:both;animation-fill-mode:both; -webkit-animation-name:showIn;animation-name:showIn;-moz-animation-name:showIn; -webkit-animation-duration:1s;animation-duration:1s;  }
+
+@-webkit-keyframes showIn{  0%{opacity: 0; } 100%{opacity: 1; }  }
+@-moz-keyframes showIn{  0%{opacity: 0; } 100%{opacity: 1; }  }
+@keyframes showIn{  0%{opacity: 0; } 100%{opacity: 1; }  }
+
+.scroll_effect{opacity: 0;transition: all 1.2s; -webkit-transition: all 1.2s; -moz-transition: all 1.2s;}
+.add_scroll_effect{opacity: 1;}
+
+.transition-delay-7{transition-delay: 0.7s;-webkit-transition-delay: 0.7s; -moz-transition-delay: 0.7s;}
+.transition-delay-8{transition-delay: 0.8s;-webkit-transition-delay: 0.8s; -moz-transition-delay: 0.8s;}
+.transition-delay-9{transition-delay: 0.9s;-webkit-transition-delay: 0.9s; -moz-transition-delay: 0.9s;}
+.transition-delay-10{transition-delay: 1.0s;-webkit-transition-delay: 1.0s; -moz-transition-delay: 1.0s;}
+.transition-delay-11{transition-delay: 1.1s;-webkit-transition-delay: 1.1s; -moz-transition-delay: 1.1s;}
+.transition-delay-12{transition-delay: 1.2s;-webkit-transition-delay: 1.2s; -moz-transition-delay: 1.2s;}
+
 @media screen and (min-width: 200px) and (max-width: 1024px) {
 
 }
 
 @media screen and (min-width: 200px) and (max-width: 768px) {
+.col-2, .col-3, .col-4, .col-5, .col-60, .col-40, .col-70, .col-30{width: 100%;}
 
 }
 
